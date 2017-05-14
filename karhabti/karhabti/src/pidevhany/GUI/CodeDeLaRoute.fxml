@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidevhany.Controllers.CodeDeLaRouteController">
+   <center>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="221.0" prefWidth="470.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fitHeight="74.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/1.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="9.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="74.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../images/2.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="9.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="74.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../images/3.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="9.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="74.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../images/4.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="9.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="74.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../images/5.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="9.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fitHeight="74.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../images/6.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="9.0" />
+               </GridPane.margin>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#nivUn" style="-fx-background-color: #00b4c9;" text="Niveau 1" textFill="WHITE">
+               <GridPane.margin>
+                  <Insets left="9.0" top="88.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="35.0" right="35.0" />
+               </padding></Button>
+            <Button mnemonicParsing="false" onAction="#nivDeux" style="-fx-background-color: #00b4c9;" text="Niveau 2" textFill="WHITE" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="9.0" top="88.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="35.0" right="35.0" />
+               </padding></Button>
+            <Button mnemonicParsing="false" onAction="#nivTrois" style="-fx-background-color: #00b4c9;" text="Niveau 3" textFill="WHITE" GridPane.columnIndex="2">
+               <GridPane.margin>
+                  <Insets left="9.0" top="88.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="35.0" right="35.0" />
+               </padding></Button>
+            <Button mnemonicParsing="false" onAction="#nivQuatre" style="-fx-background-color: #00b4c9;" text="Niveau 4" textFill="WHITE" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="9.0" top="88.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="35.0" right="35.0" />
+               </padding></Button>
+            <Button mnemonicParsing="false" onAction="#nivCinq" style="-fx-background-color: #00b4c9;" text="Niveau 5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="9.0" top="88.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="35.0" right="35.0" />
+               </padding></Button>
+            <Button mnemonicParsing="false" onAction="#nivSix" style="-fx-background-color: #00b4c9;" text="Niveau 6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="9.0" top="88.0" />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="35.0" right="35.0" />
+               </padding></Button>
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <Pane prefHeight="79.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="54.0" layoutY="27.0" onAction="#annonce" prefWidth="108.0" style="-fx-background-color: #00b4c9;" text="Annonces" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="179.0" layoutY="27.0" onAction="#offre" prefWidth="108.0" style="-fx-background-color: #00b4c9;" text="Offres" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="308.0" layoutY="27.0" onAction="#ptVente" prefWidth="108.0" style="-fx-background-color: #00b4c9;" text="Points de ventes" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="438.0" layoutY="27.0" onAction="#evennement" prefWidth="108.0" style="-fx-background-color: #00b4c9;" text="Evenements" textFill="WHITE" />
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

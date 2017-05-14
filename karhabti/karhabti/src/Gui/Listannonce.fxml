@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="434.0" prefWidth="734.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ListannonceController">
+    <stylesheets>
+        <URL value="@listannonce.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="497.0" fitWidth="773.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/collection-gratuit-voitures-top-background-walls-wallpapers-115676.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image" fitHeight="31.0" fitWidth="67.0" layoutX="433.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="list" layoutY="130.0" opacity="0.77" prefHeight="294.0" prefWidth="643.0">
+         <columns>
+            <TableColumn fx:id="TITRE" prefWidth="92.0" text="TITRE" />
+            <TableColumn fx:id="REGION" prefWidth="104.0" text="REGION" />
+            <TableColumn fx:id="BOITE" prefWidth="111.0" text="BOITE" />
+            <TableColumn fx:id="PRIX" prefWidth="98.0" text="PRIX" />
+            <TableColumn fx:id="NOMBRE_DE_CYLINDRES" prefWidth="160.0" text="NOMBRE_DE_CYLINDRES" />
+            <TableColumn fx:id="Date" prefWidth="75.0" text="Date" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="667.0" layoutY="361.0" onAction="#Details" prefHeight="31.0" prefWidth="98.0" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Détails" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="idAnnonce" layoutX="653.0" layoutY="161.0" text="Label" visible="false" />
+      <JFXButton buttonType="RAISED" layoutX="653.0" layoutY="286.0" onAction="#Accepter" prefHeight="31.0" prefWidth="98.0" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Accepter" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="id_user" layoutX="702.0" layoutY="153.0" text="Label" visible="false" />
+      <JFXButton buttonType="RAISED" layoutX="653.0" layoutY="192.0" onAction="#Supprimer" prefHeight="31.0" prefWidth="98.0" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Supprimer" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

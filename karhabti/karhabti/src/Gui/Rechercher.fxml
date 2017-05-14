@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RechercherController">
+   <children>
+      <ImageView fitHeight="506.0" fitWidth="761.0" layoutX="-9.0" opacity="0.73" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/1.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="TITRE" layoutX="322.0" layoutY="161.0" prefHeight="25.0" prefWidth="141.0" promptText="TITRE" style="-fx-background-color: #ffffff;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="PRIX_MIN" layoutX="322.0" layoutY="288.0" prefHeight="25.0" prefWidth="141.0" promptText="PRIX MIN" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="PRIX_MAX" layoutX="322.0" layoutY="350.0" prefHeight="25.0" prefWidth="141.0" promptText="PRIX MAX" style="-fx-background-color: #ffffff;" />
+      <JFXComboBox fx:id="REGION" focusColor="WHITE" layoutX="319.0" layoutY="95.0" promptText="Choisir ton Region" style="-fx-background-color: #ffffff;" unFocusColor="#9a1e1e" />
+      <JFXComboBox fx:id="BOITE" layoutX="322.0" layoutY="230.0" prefHeight="25.0" prefWidth="141.0" promptText="BOITE" style="-fx-background-color: #ffffff;" />
+      <JFXButton buttonType="RAISED" layoutX="239.0" layoutY="460.0" onAction="#Recherche" prefHeight="31.0" prefWidth="328.0" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Recherche" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="image" fitHeight="31.0" fitWidth="67.0" layoutX="433.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

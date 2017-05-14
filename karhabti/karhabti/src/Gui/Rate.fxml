@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" prefHeight="418.0" prefWidth="427.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RateController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="307.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#70baffd2" height="357.0" layoutX="28.0" layoutY="29.0" opacity="0.56" stroke="BLACK" strokeType="INSIDE" width="346.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b5b5b5" height="174.0" layoutX="53.0" layoutY="44.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="289.0" />
+            <Rating fx:id="rating" layoutX="110.0" layoutY="298.0" onMouseClicked="#rate" rating="1.0" />
+            <Rating fx:id="rating2" cacheShape="false" centerShape="false" disable="true" focusTraversable="false" layoutX="150.0" layoutY="105.0" partialRating="true" rating="0.0" scaleShape="false">
+               <effect>
+                  <Blend mode="COLOR_BURN" />
+               </effect>
+            </Rating>
+            <Label layoutX="68.0" layoutY="106.0" text="Vote:" textFill="#ebb044">
+               <font>
+                  <Font name="Georgia Bold Italic" size="25.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" height="0.0" offsetX="0.5" offsetY="1.5" radius="0.0" width="0.0" />
+               </effect>
+            </Label>
+            <Label layoutX="110.0" layoutY="262.0" text="Voulez vous Voter l'annonce:">
+               <font>
+                  <Font name="Georgia Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

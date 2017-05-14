@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidevhany.Controllers.HomeAdminController">
+   <center>
+      <ScrollPane fx:id="mainPane" prefHeight="485.0" prefWidth="664.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="416.0" prefWidth="580.0" />
+        </content>
+      </ScrollPane>
+   </center>
+   <top>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="125.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/admin-icon.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" onAction="#lister" prefHeight="50.0" prefWidth="100.0" ripplerFill="#5eb6dd" style="-fx-background-color: #046380;" text="Lister" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#ajouter" opacity="0.79" prefHeight="50.0" prefWidth="100.0" ripplerFill="#5eb6dd" style="-fx-background-color: #375D81;" text="Ajouter" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#supprimer" prefHeight="50.0" prefWidth="100.0" ripplerFill="#5eb6dd" style="-fx-background-color: #046380;" text="Supprimer" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#modifier" opacity="0.79" prefHeight="50.0" prefWidth="100.0" ripplerFill="#5eb6dd" style="-fx-background-color: #375D81;" text="Modifier" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#statistics" prefHeight="50.0" prefWidth="100.0" ripplerFill="#5eb6dd" style="-fx-background-color: #046380;" text="Statistiques" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font></JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" onAction="#exit" opacity="0.79" prefHeight="50.0" prefWidth="100.0" ripplerFill="#c50a0a" style="-fx-background-color: #DE2916;" text="Quitter" textFill="WHITE" underline="true">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font></JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <Pane fx:id="pane" prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: #046380;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="8.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard Admin" wrappingWidth="133.958984375">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Text>
+            <JFXButton buttonType="RAISED" layoutX="163.0" layoutY="5.0" onAction="#annonce" prefHeight="26.0" prefWidth="108.0" ripplerFill="#5eb6dd" style="-fx-background-color: #375D81;" text="Annonces" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="283.0" layoutY="5.0" onAction="#offres" prefHeight="26.0" prefWidth="96.0" ripplerFill="#5eb6dd" style="-fx-background-color: #375D81;" text="Offres" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="390.0" layoutY="5.0" onAction="#evennement" prefHeight="26.0" prefWidth="103.0" ripplerFill="#5eb6dd" style="-fx-background-color: #375D81;" text="Evenement" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="502.0" layoutY="5.0" onAction="#ptvente" prefHeight="26.0" prefWidth="127.0" ripplerFill="#5eb6dd" style="-fx-background-color: #375D81;" text="Points de ventes" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="640.0" layoutY="5.0" onAction="#codeRoute" prefWidth="127.0" ripplerFill="#5eb6dd" style="-fx-background-color: #375D81;" text="Code de la route " textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </JFXButton>
+         </children></Pane>
+   </top>
+</BorderPane>

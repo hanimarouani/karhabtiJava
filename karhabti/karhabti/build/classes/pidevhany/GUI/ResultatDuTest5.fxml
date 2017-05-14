@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidevhany.Controllers.ResultatDuTest5Controller">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="59.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/correct.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="59.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/fausse.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="377.0" layoutY="349.0" onAction="#imprimerRes" style="-fx-background-color: #183152;" text="Imprimer resultat" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="528.0" layoutY="349.0" onAction="#Retour" style="-fx-background-color: #183152;" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font></JFXButton>
+      <Label fx:id="repCorrecte" layoutX="316.0" layoutY="117.0" text="Label">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="repFausses" layoutX="316.0" layoutY="269.0" text="Label">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

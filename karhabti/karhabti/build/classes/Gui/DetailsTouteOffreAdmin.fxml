@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: e4e4e4;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="Controller.DetailsTouteOffreAdminController">
+   <children>
+      <Label layoutX="198.0" layoutY="157.0" text="Nom offre" />
+      <Label layoutX="198.0" layoutY="197.0" text="Description" />
+      <Label layoutX="198.0" layoutY="239.0" text="Nom Point de vente" />
+      <Label layoutX="198.0" layoutY="283.0" text="Prix initial" />
+      <Label layoutX="198.0" layoutY="329.0" text="Prix apres remise" />
+      <Label layoutX="198.0" layoutY="406.0" text="Photo" />
+      <Label fx:id="ddnomoffre" layoutX="369.0" layoutY="157.0" text="Label" />
+      <Label fx:id="ddnompointdevente" layoutX="369.0" layoutY="239.0" text="Label" />
+      <Label fx:id="ddprixinitial" layoutX="369.0" layoutY="283.0" text="Label" />
+      <Label fx:id="ddprixapresremise" layoutX="369.0" layoutY="338.0" text="Label" />
+      <Label fx:id="dddescription" layoutX="369.0" layoutY="197.0" text="Label" />
+      <ImageView fx:id="dimageoffre" fitHeight="150.0" fitWidth="200.0" layoutX="369.0" layoutY="363.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="310.0" layoutY="46.0" text="K A R H A B T Y" textAlignment="CENTER" textFill="#40e0ee">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="104.0" fitWidth="98.0" layoutX="61.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/karhabty.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="162.0" onAction="#detailstouteoffretooffreconfirmé" style="-fx-background-color: #40e0ee;" text="Offres confirmé" />
+      <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="206.0" onAction="#detailstouteoffretooffrenonconfirme" style="-fx-background-color: #40e0ee;" text="Offres non confirmé" />
+   </children>
+</AnchorPane>

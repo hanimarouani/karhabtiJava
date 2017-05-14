@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminListController">
+    <stylesheets>
+        <URL value="@adminlist.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="list" layoutX="151.0" prefHeight="304.0" prefWidth="449.0">
+         <columns>
+            <TableColumn fx:id="TITRE" prefWidth="75.0" text="TITRE" />
+            <TableColumn fx:id="REGION" prefWidth="75.0" text="REGION" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="13.0" layoutY="28.0" text="List Annonces " />
+      <JFXButton layoutX="28.0" layoutY="71.0" onAction="#Accepter" text="Accepter" />
+      <JFXButton layoutX="24.0" layoutY="127.0" text="Supprimer" />
+      <Label fx:id="idAnnonce" layoutX="31.0" layoutY="353.0" text="Label" visible="false" />
+      <JFXButton layoutX="14.0" layoutY="175.0" onAction="#annonceSignaler" text="list annonce signaler" />
+   </children>
+</AnchorPane>

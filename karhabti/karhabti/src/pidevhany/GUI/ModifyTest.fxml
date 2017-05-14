@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="485.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidevhany.Controllers.ModifyTestController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="598.0">
+         <children>
+            <TableView fx:id="table" prefHeight="236.0" prefWidth="662.0" style="-fx-background-color: #E1E6FA;">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="niveau" prefWidth="75.0" text="Niveau " />
+                  <TableColumn fx:id="question" prefWidth="75.0" text="Question" />
+                  <TableColumn fx:id="choix1" prefWidth="75.0" text="Choix 1 " />
+                  <TableColumn fx:id="choix2" prefWidth="75.0" text="Choix 2" />
+                  <TableColumn fx:id="choix3" prefWidth="75.0" text="Choix 3" />
+                  <TableColumn fx:id="reponse" prefWidth="75.0" text="Reponse" />
+                  <TableColumn fx:id="image" prefWidth="75.0" text="Image" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="234.0" prefWidth="598.0">
+         <children>
+            <ScrollPane prefHeight="236.0" prefWidth="662.0" style="-fx-background-color: #C4D7ED;">
+               <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="304.0" prefWidth="646.0" style="-fx-background-color: #C4D7ED;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Id">
+                           <font>
+                              <Font name="Arial Bold Italic" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="14.0" layoutY="39.0" text="Niveau">
+                           <font>
+                              <Font name="Arial Bold Italic" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="13.0" layoutY="72.0" text="Question">
+                           <font>
+                              <Font name="Arial Bold Italic" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="14.0" layoutY="106.0" text="Choix 1">
+                           <font>
+                              <Font name="Arial Bold Italic" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="13.0" layoutY="144.0" text="Choix 2">
+                           <font>
+                              <Font name="Arial Bold Italic" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="13.0" layoutY="180.0" text="Choix 3">
+                           <font>
+                              <Font name="Arial Bold Italic" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="14.0" layoutY="219.0" prefHeight="16.0" prefWidth="67.0" text="Reponse">
+                           <font>
+                              <Font name="Arial Bold Italic" size="13.0" />
+                           </font></Label>
+                        <Label layoutX="16.0" layoutY="260.0" text="Image">
+                           <font>
+                              <Font name="Arial Bold Italic" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="jid" layoutX="128.0" layoutY="14.0">
+                           <font>
+                              <Font name="Arial Bold Italic" size="13.0" />
+                           </font></Label>
+                        <TextArea fx:id="jniveau" layoutX="118.0" layoutY="39.0" prefHeight="20.0" prefWidth="90.0" promptText="niveau" />
+                        <TextArea fx:id="jquestion" layoutX="118.0" layoutY="71.0" prefHeight="20.0" prefWidth="356.0" promptText="question" />
+                        <TextArea fx:id="jchoix1" layoutX="118.0" layoutY="105.0" prefHeight="20.0" prefWidth="356.0" promptText="choix numéro un " />
+                        <TextArea fx:id="jchoix2" layoutX="118.0" layoutY="143.0" prefHeight="20.0" prefWidth="356.0" promptText="choix numéro deux " />
+                        <TextArea fx:id="jchoix3" layoutX="118.0" layoutY="179.0" prefHeight="20.0" prefWidth="356.0" promptText="choix numéro trois " />
+                        <TextArea fx:id="jreponse" layoutX="118.0" layoutY="218.0" prefHeight="20.0" prefWidth="90.0" promptText="reponse" />
+                        <TextArea fx:id="jpath" layoutX="327.0" layoutY="259.0" prefHeight="20.0" prefWidth="147.0" promptText="image path " />
+                        <Button layoutX="118.0" layoutY="256.0" mnemonicParsing="false" onAction="#UploadImage" style="-fx-background-color: #183152;" text="Choisir image" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font></Button>
+                        <Button layoutX="552.0" layoutY="58.0" mnemonicParsing="false" onAction="#Modifier" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #183152;" text="Valider" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font></Button>
+                        <Button layoutX="552.0" layoutY="18.0" mnemonicParsing="false" onAction="#Recuperer" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #183152;" text="Modifier" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font></Button>
+                        <Button layoutX="553.0" layoutY="101.0" mnemonicParsing="false" onAction="#Retour" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #183152;" text="Retour" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font></Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

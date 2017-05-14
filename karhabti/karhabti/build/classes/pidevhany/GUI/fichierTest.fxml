@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidevhany.Controllers.FichierTestController">
+   <children>
+      <JFXHamburger fx:id="hamburger" layoutX="544.0" layoutY="21.0" />
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" prefHeight="400.0" prefWidth="136.0" />
+   </children>
+</AnchorPane>

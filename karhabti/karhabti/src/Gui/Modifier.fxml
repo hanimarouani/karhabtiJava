@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="VBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifierController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AmbientLight color="CHARTREUSE" lightOn="true" />
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="654.0">
+         <children>
+            <TextField fx:id="PRIX" layoutX="435.0" layoutY="244.0" />
+            <TextField fx:id="CYLINDREE" layoutX="35.0" layoutY="244.0" />
+            <TextField fx:id="ENERGIE" layoutX="35.0" layoutY="188.0" />
+            <TextField fx:id="PUISSANCE_FISCALE" layoutX="435.0" layoutY="188.0" />
+            <TextField fx:id="NOMBRE_DE_CYLINDRES" layoutX="435.0" layoutY="125.0" />
+            <TextField fx:id="BOITE" layoutX="35.0" layoutY="125.0" />
+            <TextField fx:id="REGION" layoutX="435.0" layoutY="62.0" />
+            <TextField fx:id="TITRE" layoutX="35.0" layoutY="62.0" />
+            <AmbientLight color="CHARTREUSE" layoutX="10.0" layoutY="10.0" lightOn="true" />
+            <Button fx:id="modifier" layoutX="286.0" layoutY="396.0" mnemonicParsing="false" onAction="#modifier" text="modifier" />
+            <Label layoutX="35.0" layoutY="28.0" text="TITRE" />
+            <Label layoutX="435.0" layoutY="28.0" text="REGION" />
+            <Label layoutX="35.0" layoutY="98.0" text="BOITE" />
+            <Label layoutX="435.0" layoutY="98.0" text="NOMBRE_DE_CYLINDRES" />
+            <Label layoutX="35.0" layoutY="161.0" text="ENERGIE" />
+            <Label layoutX="435.0" layoutY="161.0" text="PUISSANCE_FISCALE" />
+            <Label layoutX="35.0" layoutY="220.0" text="CYLINDREE" />
+            <Label layoutX="435.0" layoutY="220.0" text="PRIX" />
+            <TextArea fx:id="DESCRIPITION" layoutX="186.0" layoutY="305.0" prefHeight="83.0" prefWidth="253.0" />
+            <Label layoutX="272.0" layoutY="277.0" text="DESCRIPITION" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="702.0" prefWidth="730.0" style="-fx-background-color: e4e4e4;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLAfficheroffresController">
+   <children>
+      <ImageView fitHeight="757.0" fitWidth="737.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/15.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tableview" layoutX="217.0" layoutY="136.0" prefHeight="151.0" prefWidth="520.0" stylesheets="@ajout.css">
+        <columns>
+          <TableColumn fx:id="nomoffreColumn" prefWidth="131.0" text="Nom de  l'offre " />
+            <TableColumn fx:id="descColumn" prefWidth="242.0" text="Description" />
+            <TableColumn fx:id="tauxremiseColumn" prefWidth="145.0" text="Taux de remise" />
+        </columns>
+      </TableView>
+      <Pane layoutX="221.0" layoutY="287.0" prefHeight="328.0" prefWidth="513.0">
+         <children>
+            <JFXComboBox fx:id="ptventeid" layoutX="170.0" layoutY="45.0" prefHeight="25.0" prefWidth="190.0" promptText="Selectionnez un point de vente" />
+            <JFXTextField fx:id="imagepath" disable="true" layoutX="295.0" layoutY="210.0" prefHeight="25.0" prefWidth="190.0" />
+            <JFXTextArea fx:id="description" layoutX="170.0" layoutY="119.0" prefHeight="65.0" prefWidth="310.0" promptText="Saisissez votre nouvelle description">
+               <font>
+                  <Font size="18.0" />
+               </font></JFXTextArea>
+            <JFXTextField fx:id="nomoffre" layoutX="170.0" layoutY="74.0" prefHeight="25.0" prefWidth="310.0" promptText="Nom de l'offre" />
+            <JFXTextField fx:id="prinxinitial" layoutX="170.0" layoutY="263.0" prefHeight="25.0" prefWidth="165.0" promptText="Prix initial" />
+            <JFXTextField fx:id="taux" layoutX="170.0" layoutY="296.0" prefHeight="25.0" prefWidth="165.0" promptText="Taux de remise " />
+            <JFXButton buttonType="RAISED" layoutX="157.0" layoutY="209.0" onAction="#ajouterimage" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #40e0ee;" text="Selectionnez image">
+               <font>
+                  <Font size="13.0" />
+               </font></JFXButton>
+            <Label layoutX="48.0" layoutY="222.0" prefHeight="0.0" prefWidth="80.0" text="Image" />
+            <Label layoutX="48.0" layoutY="309.0" prefHeight="0.0" prefWidth="80.0" text="Taux Remise" />
+            <Label layoutX="48.0" layoutY="276.0" prefHeight="0.0" prefWidth="80.0" text="prix initial" />
+            <Label layoutX="48.0" layoutY="87.0" prefHeight="0.0" prefWidth="80.0" text="Nom Offre" />
+            <Label layoutX="48.0" layoutY="162.0" prefHeight="0.0" prefWidth="80.0" text="description" />
+            <Label layoutX="48.0" layoutY="58.0" text="Point de vente " />
+            <Label fx:id="idoffre" layoutX="389.0" layoutY="17.0" text="Label" visible="false" />
+            <Label layoutX="5.0" layoutY="7.0" prefHeight="38.0" prefWidth="520.0" text="Selectionnez une de vos offres pour modifier, supprimer ou  pour afficher plus de détails" textFill="#40e0ee">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton buttonType="RAISED" layoutX="223.0" layoutY="641.0" onAction="#modifier" prefHeight="47.0" prefWidth="135.0" style="-fx-background-color: #40e0ee;" text="Modifier ">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="378.0" layoutY="641.0" onAction="#showmoredetails" prefHeight="47.0" prefWidth="150.0" style="-fx-background-color: #40e0ee;" text="Détails">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="546.0" layoutY="641.0" onAction="#supprimer" prefHeight="47.0" prefWidth="150.0" style="-fx-background-color: #40e0ee;" text="Supprimer">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <AnchorPane layoutY="233.0" prefHeight="265.0" prefWidth="200.0" style="-fx-background-color: e4e4e4; -fx-border-color: #40e0ee;">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/home.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="14.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/add.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="14.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/mesoffres.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="14.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/list.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="14.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logout.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="60.0" layoutY="19.0" onAction="#listtoaccueil" prefHeight="29.0" prefWidth="80.0" style="-fx-background-color: b4b4b4;" text="Accueil" textFill="#0d767c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="58.0" layoutY="69.0" onAction="#listtoajout" prefHeight="29.0" prefWidth="135.0" style="-fx-background-color: b4b4b4;" text="Ajouter une offre" textFill="#0d767c">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" disable="true" layoutX="64.0" layoutY="120.0" style="-fx-background-color: b4b4b4;" text="Mes offres" textFill="#0d767c" />
+            <JFXButton buttonType="RAISED" layoutX="60.0" layoutY="166.0" onAction="#mesoffrestotoutesoffres" style="-fx-background-color: b4b4b4;" text="Toute les offres" textFill="#0d767c" />
+            <JFXButton buttonType="RAISED" layoutX="60.0" layoutY="220.0" onAction="#mesoffresdeconnecter" style="-fx-background-color: b4b4b4;" text="Se déconnecter" textFill="#0d767c" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="291.0" layoutY="21.0" text="K A R H A B T Y" textFill="#4cc6eb">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="192.0" layoutY="93.0" style="-fx-background-color: #40e0ee;" text="Offres">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="0.2571428571428572" endY="0.23809523809523814" startX="0.16666666666666669" startY="0.23809523809523814">
+               <stops>
+                  <Stop color="#174e5b" />
+                  <Stop color="#1c9e9e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="299.0" layoutY="93.0" style="-fx-background-color: #40e0ee;" text="Points de vente">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="0.2571428571428572" endY="0.23809523809523814" startX="0.7000000000000001" startY="0.23809523809523814">
+               <stops>
+                  <Stop color="#174e5b" />
+                  <Stop color="#1c9e9e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="465.0" layoutY="93.0" style="-fx-background-color: #40e0ee;" text="Evennements">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="0.2571428571428572" endY="0.23809523809523814" startX="0.7000000000000001" startY="0.23809523809523814">
+               <stops>
+                  <Stop color="#174e5b" />
+                  <Stop color="#1c9e9e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="596.0" layoutY="93.0" style="-fx-background-color: #40e0ee;" text="Code de la route">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="0.6714285714285715" endY="0.23809523809523814" startX="0.5952380952380952" startY="0.23809523809523814">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#86b9b9" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="80.0" layoutY="94.0" onAction="#Annonces" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Annonces" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

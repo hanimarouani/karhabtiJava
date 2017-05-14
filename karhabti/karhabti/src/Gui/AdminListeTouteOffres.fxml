@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminListeTouteOffresController">
+   <children>
+      <TableView fx:id="aatabview" layoutX="144.0" layoutY="142.0" prefHeight="200.0" prefWidth="459.0" stylesheets="@ajout.css">
+        <columns>
+          <TableColumn fx:id="aanomoffre" prefWidth="120.0" text="Nom offre" />
+          <TableColumn fx:id="aadescription" prefWidth="227.0" text="Description" />
+            <TableColumn fx:id="aataux" prefWidth="110.0" text="Taux de remise" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="230.0" layoutY="372.0" onAction="#adminsupprimeroffreconfirmer" style="-fx-background-color: #40e0ee;" text="Supprimer" />
+      <JFXButton buttonType="RAISED" layoutX="376.0" layoutY="372.0" onAction="#admindetailsoffreconfirmer" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: #40e0ee;" text="Détails" />
+      <Label layoutX="274.0" layoutY="60.0" text="K A R H A B T Y" textAlignment="CENTER" textFill="#40e0ee">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="104.0" fitWidth="98.0" layoutX="37.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/karhabty.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="aaidoffre" layoutX="510.0" layoutY="437.0" text="Label" visible="false" />
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="167.0" onAction="#adminlistoffreconfirmetononconfirmer" style="-fx-background-color: #40e0ee;" text="Offres non confirmé" />
+      <JFXButton buttonType="RAISED" layoutX="492.0" layoutY="433.0" onAction="#retour" prefHeight="25.0" prefWidth="72.0" ripplerFill="WHITE" style="-fx-background-color: #ff0000;" text="Retour" textFill="WHITE" />
+   </children>
+</AnchorPane>

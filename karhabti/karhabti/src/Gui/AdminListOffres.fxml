@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="458.0" prefWidth="569.0" style="-fx-background-color: e4e4e4;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminListOffresController">
+   <children>
+      <TableView fx:id="tbvadmin" layoutX="198.0" layoutY="117.0" prefHeight="235.0" prefWidth="403.0" stylesheets="@ajout.css">
+        <columns>
+          <TableColumn fx:id="anomoffre" prefWidth="137.0" text="Nom offre" />
+          <TableColumn fx:id="adescription" prefWidth="167.0" text="Description" />
+            <TableColumn fx:id="ataux" prefWidth="97.0" text="Taux de remise" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="404.0" layoutY="385.0" onAction="#accepteroffre" prefHeight="47.0" prefWidth="119.0" style="-fx-background-color: #40e0ee;" text="Accepter">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="92.0" layoutY="385.0" onAction="#refuseroffre" prefHeight="47.0" prefWidth="95.0" style="-fx-background-color: #40e0ee;" text="Refuser">
+         <font>
+            <Font size="20.0" />
+         </font></JFXButton>
+      <Label fx:id="aidoffre" layoutX="435.0" layoutY="228.0" text="Label" visible="false" />
+      <JFXButton buttonType="RAISED" layoutX="225.0" layoutY="385.0" onAction="#adminafficherdetails" prefHeight="47.0" prefWidth="151.0" style="-fx-background-color: #40e0ee;" text="Afficher details">
+         <font>
+            <Font size="19.0" />
+         </font></JFXButton>
+      <Label layoutX="300.0" layoutY="36.0" text="K A R H A B T Y" textAlignment="CENTER" textFill="#40e0ee">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="104.0" fitWidth="98.0" layoutX="51.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/karhabty.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="135.0" onAction="#adminmesoffrestoalloffres" style="-fx-background-color: #40e0ee;" text="Les offres confirmés" />
+   </children>
+</AnchorPane>

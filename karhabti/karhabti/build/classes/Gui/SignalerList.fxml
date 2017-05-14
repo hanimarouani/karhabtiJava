@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="432.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SignalerListController">
+   <children>
+      <ImageView fitHeight="506.0" fitWidth="761.0" opacity="0.49" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/collection-gratuit-voitures-top-background-walls-wallpapers-115676.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="list" opacity="0.8" prefHeight="478.0" prefWidth="460.0">
+         <columns>
+            <TableColumn fx:id="count" prefWidth="155.0" text="Nombre de Signalisations" />
+            <TableColumn fx:id="titre" prefWidth="128.0" text="Titre Annonce" />
+            <TableColumn fx:id="Nom_usersig" prefWidth="176.0" text="Nom user qui à été signaler" />
+         </columns>
+      </TableView>
+      <Label fx:id="idAnnonce" layoutX="41.0" layoutY="363.0" text="Label" visible="false" />
+      <JFXButton buttonType="RAISED" layoutX="505.0" layoutY="238.0" onAction="#supprimer" prefHeight="31.0" prefWidth="204.0" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Supprimer" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

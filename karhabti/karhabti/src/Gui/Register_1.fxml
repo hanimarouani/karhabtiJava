@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="402.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterController_1">
+   <children>
+      <Label layoutX="110.0" layoutY="90.0" text="Nom d'utilisateur " />
+      <Label layoutX="110.0" layoutY="135.0" text="E-mail" />
+      <Label layoutX="110.0" layoutY="184.0" text="Mot de passe" />
+      <Label layoutX="110.0" layoutY="237.0" text="Confirmer mot de passe" />
+      <JFXTextField fx:id="rnomutilisateur" layoutX="300.0" layoutY="73.0" />
+      <JFXTextField fx:id="remail" layoutX="300.0" layoutY="118.0" />
+      <JFXTextField fx:id="rmotdepasse" layoutX="300.0" layoutY="168.0" />
+      <JFXTextField fx:id="rcmotdepasse" layoutX="300.0" layoutY="220.0" />
+      <Label layoutX="111.0" layoutY="279.0" text="Image" />
+      <JFXButton layoutX="300.0" layoutY="275.0" onAction="#rajouterimage" text="Ajouter une image" textAlignment="CENTER" />
+      <JFXTextField fx:id="rimagepath" layoutX="300.0" layoutY="296.0" />
+      <JFXButton fx:id="inscription" layoutX="220.0" layoutY="349.0" onAction="#rinscription" text="S'inscrire" />
+      <Label layoutX="251.0" layoutY="14.0" text="S'inscrire" textFill="#64d2eb">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="rnumtel" layoutX="300.0" layoutY="324.0" />
+      <Label layoutX="113.0" layoutY="341.0" text="Num tel" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RechercheController">
+   <children>
+      <ImageView fitHeight="494.0" fitWidth="778.0" layoutX="-8.0" layoutY="-86.0" opacity="0.58" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/collection-gratuit-voitures-top-background-walls-wallpapers-115676.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="list" layoutX="131.0" layoutY="75.0" opacity="0.77" prefHeight="249.0" prefWidth="560.0">
+        <columns>
+          <TableColumn fx:id="TITRE" prefWidth="92.0" text="TITRE" />
+          <TableColumn fx:id="REGION" prefWidth="104.0" text="REGION" />
+            <TableColumn fx:id="BOITE" prefWidth="111.0" text="BOITE" />
+            <TableColumn fx:id="NOMBRE_DE_CYLINDRES" prefWidth="148.0" text="NOMBRE_DE_CYLINDRES" />
+            <TableColumn fx:id="PRIX" prefWidth="110.0" text="PRIX" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="image" fitHeight="31.0" fitWidth="67.0" layoutX="450.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton buttonType="RAISED" layoutX="362.0" layoutY="338.0" onAction="#Details" prefHeight="31.0" prefWidth="98.0" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Détails" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="idAnnonce" layoutX="643.0" layoutY="151.0" text="Label" visible="false" />
+   </children>
+</AnchorPane>

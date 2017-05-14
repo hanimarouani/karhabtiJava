@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminAnnoces">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="219.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#AnnoncesNonConfirmé" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Les annonces non confirmées" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#AnnoncesSignalé" prefHeight="31.0" prefWidth="207.0" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Les annonces signalées" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="16.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#retour" prefHeight="31.0" prefWidth="207.0" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Retour" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="224.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <ScrollPane fx:id="mainPane" prefHeight="505.0" prefWidth="717.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

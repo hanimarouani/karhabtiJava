@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MesSignalerController">
+   <children>
+      <ImageView fx:id="image" fitHeight="476.0" fitWidth="762.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/collection-gratuit-voitures-top-background-walls-wallpapers-115676.jpg" />
+         </image></ImageView>
+      <TableView fx:id="list" layoutX="123.0" layoutY="107.0" opacity="0.77" prefHeight="281.0" prefWidth="568.0">
+         <columns>
+            <TableColumn fx:id="TITRE" prefWidth="92.0" text="TITRE" />
+            <TableColumn fx:id="REGION" prefWidth="104.0" text="REGION" />
+            <TableColumn fx:id="BOITE" prefWidth="111.0" text="BOITE" />
+            <TableColumn fx:id="NOMBRE_DE_CYLINDRES" prefWidth="125.0" text="NOMBRE_DE_CYLINDRES" />
+            <TableColumn fx:id="PRIX" prefWidth="133.0" text="PRIX" />
+         </columns>
+      </TableView>
+      <Label fx:id="idAnnonce" layoutX="712.0" layoutY="163.0" text="Label" visible="false" />
+      <JFXButton buttonType="RAISED" layoutX="337.0" layoutY="405.0" onAction="#supprimer" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Supprimer" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="517.0" prefWidth="776.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+   <children>
+      <ImageView fitHeight="527.0" fitWidth="785.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/1.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="45.0" layoutY="54.0" onAction="#Home" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Annonces" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="154.0" layoutY="54.0" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Offres" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="247.0" layoutY="54.0" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Points de vent" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="380.0" layoutY="54.0" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Evennemments" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="657.0" layoutY="54.0" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Contactez-Nous" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="649.0" layoutY="14.0" onAction="#deconnexion" ripplerFill="#171616" style="-fx-background-color: #171616;" text="déconnexion " textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="nom" layoutX="505.0" layoutY="21.0" text="Nom" />
+      <Label fx:id="Email" layoutX="569.0" layoutY="21.0" text="Email" />
+      <Label layoutX="105.0" layoutY="17.0" text="KARHABTY" textFill="#216f90">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#e2ebf2c7" height="50.65" radius="15.1875" spread="0.43" width="12.1" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="NE_RESIZE" />
+         </cursor>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="45.0" layoutY="230.0" onAction="#Listannonce" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="TOUT ANNONCES" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="45.0" layoutY="287.0" onAction="#Mesannonce" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="MES ANNONCES" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="435.0" onAction="#Rechercher" prefHeight="0.0" prefWidth="174.0" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="RECHERCHE AVANCER" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="45.0" layoutY="161.0" onAction="#ajouter" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="AJOUTER UNE ANNONCE" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="64.0" fitWidth="91.0" layoutX="22.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/17760365_705852362929396_1700509485_n.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="image" fitHeight="31.0" fitWidth="67.0" layoutX="423.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton buttonType="RAISED" layoutX="512.0" layoutY="54.0" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Code de la route" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="362.0" onAction="#ListSignalisation" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="List Signalisation" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

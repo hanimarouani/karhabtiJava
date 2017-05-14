@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="529.0" prefWidth="696.0" style="-fx-background-color: 40e0ee;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AfficherToutesOffresController">
+   <children>
+      <ImageView fitHeight="578.0" fitWidth="696.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/14.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabview" layoutX="226.0" layoutY="192.0" prefHeight="241.0" prefWidth="466.0" stylesheets="@ajout.css">
+        <columns>
+          <TableColumn fx:id="nomoffco" prefWidth="108.0" text="Nom de l'offre" />
+          <TableColumn fx:id="descco" prefWidth="255.0" text="Description" />
+            <TableColumn fx:id="tauxco" prefWidth="102.0" text="Taux de remise" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="413.0" layoutY="474.0" onAction="#plusdedetails" style="-fx-background-color: #40e0ee;" text="Plus de détails" />
+      <Label fx:id="idoffree" layoutX="473.0" layoutY="326.0" text="Label" visible="false" />
+      <AnchorPane layoutY="189.0" prefHeight="247.0" prefWidth="200.0" style="-fx-border-color: #40e0ee;">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="41.0" layoutX="25.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/home.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="28.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/add.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="28.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/mesoffres.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="28.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/list.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="28.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logout.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="73.0" layoutY="34.0" onAction="#alloffertoaccueil" prefHeight="28.0" prefWidth="69.0" style="-fx-background-color: b4b4b4;" text="Accueil" textFill="#0d767c" />
+            <JFXButton buttonType="RAISED" layoutX="73.0" layoutY="71.0" onAction="#alloffertoajout" prefHeight="35.0" prefWidth="117.0" style="-fx-background-color: b4b4b4;" text="Ajouter une offre" textFill="#0d767c" />
+            <JFXButton buttonType="RAISED" layoutX="73.0" layoutY="119.0" onAction="#alloffertomesoffres" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: b4b4b4;" text="Mes offres" textFill="#0d767c" />
+            <JFXButton buttonType="RAISED" disable="true" layoutX="70.0" layoutY="160.0" style="-fx-background-color: b4b4b4;" text="Toute les offres" textFill="#0d767c" />
+            <JFXButton buttonType="RAISED" layoutX="70.0" layoutY="199.0" onAction="#toutelesoffrestologin" style="-fx-background-color: b4b4b4;" text="Se déconnecter" textFill="#0d767c" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="311.0" layoutY="41.0" text="K A R H A B T Y" textFill="#4cc6eb">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="86.0" fitWidth="98.0" layoutX="51.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/karhabty.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="171.0" layoutY="112.0" style="-fx-background-color: #40e0ee;" text="Offres">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="0.2571428571428572" endY="0.23809523809523814" startX="0.16666666666666669" startY="0.23809523809523814">
+               <stops>
+                  <Stop color="#174e5b" />
+                  <Stop color="#1c9e9e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="266.0" layoutY="112.0" style="-fx-background-color: #40e0ee;" text="Points de vente">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="0.2571428571428572" endY="0.23809523809523814" startX="0.7000000000000001" startY="0.23809523809523814">
+               <stops>
+                  <Stop color="#174e5b" />
+                  <Stop color="#1c9e9e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="419.0" layoutY="112.0" style="-fx-background-color: #40e0ee;" text="Evennements">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="0.2571428571428572" endY="0.23809523809523814" startX="0.7000000000000001" startY="0.23809523809523814">
+               <stops>
+                  <Stop color="#174e5b" />
+                  <Stop color="#1c9e9e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="553.0" layoutY="112.0" style="-fx-background-color: #40e0ee;" text="Code de la route">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="0.6714285714285715" endY="0.23809523809523814" startX="0.5952380952380952" startY="0.23809523809523814">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#86b9b9" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="56.0" layoutY="113.0" onAction="#Annonces" ripplerFill="#836868" style="-fx-background-color: #1dbcbf;" text="Annonces" textFill="#fafbfb">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

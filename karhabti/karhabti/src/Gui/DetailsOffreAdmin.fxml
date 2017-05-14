@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: e4e4e4;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DetailsOffreAdminController">
+   <children>
+      <Label layoutX="188.0" layoutY="147.0" text="Nom offre" />
+      <Label layoutX="188.0" layoutY="187.0" text="Description" />
+      <Label layoutX="188.0" layoutY="229.0" text="Nom Point de vente" />
+      <Label layoutX="188.0" layoutY="273.0" text="Prix initial" />
+      <Label layoutX="188.0" layoutY="319.0" text="Prix apres remise" />
+      <Label layoutX="188.0" layoutY="396.0" text="Photo" />
+      <Label fx:id="dnomoffre" layoutX="359.0" layoutY="147.0" text="Label" />
+      <Label fx:id="dnompointdevente" layoutX="359.0" layoutY="229.0" text="Label" />
+      <Label fx:id="dprixinitial" layoutX="359.0" layoutY="273.0" text="Label" />
+      <Label fx:id="dprixapresremise" layoutX="359.0" layoutY="328.0" text="Label" />
+      <Label fx:id="ddescription" layoutX="359.0" layoutY="187.0" text="Label" />
+      <ImageView fx:id="imageoffre" fitHeight="150.0" fitWidth="200.0" layoutX="359.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton buttonType="RAISED" layoutX="27.0" layoutY="143.0" onAction="#admindetailstolist" style="-fx-background-color: #40e0ee;" text="Offre non confirmé" />
+      <Label layoutX="175.0" layoutY="50.0" text="K A R H A B T Y" textAlignment="CENTER" textFill="#40e0ee">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="104.0" fitWidth="98.0" layoutX="27.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/karhabty.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="24.0" layoutY="204.0" onAction="#detailsoffreadmintoadminlistconfirmé" style="-fx-background-color: #40e0ee;" text="Offres déja confirmé" />
+   </children>
+</AnchorPane>
